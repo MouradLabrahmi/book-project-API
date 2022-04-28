@@ -16,9 +16,9 @@ celery -A project worker --loglevel=info
 celery -A project worker -l info --pool=solo 
  
 ### 4 Run celery-beat 
-=============================== 
+------------------------------- 
 django-celery-beat 
-=============================== 
+-------------------------------  
  
 celery -A project beat -l INFO  # For deeper logs use DEBUG 
 celery -A project worker -B -l INFO 
