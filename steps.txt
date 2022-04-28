@@ -1,0 +1,10 @@
+1- build graphql api
+2- send tasks to the queue
+    2.1 install celery
+    2.2 install celery-beat
+    2.3 add celery.py
+    2.4 add tasks.py
+    2.4 run server
+    2.5 run celery
+    2.6 run celery-beat
+    2.7 

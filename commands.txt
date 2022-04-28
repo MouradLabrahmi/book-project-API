@@ -1,0 +1,23 @@
+#1 Run server
+python manage.py runserver
+
+# 2 Run Celery
+celery -A core worker --loglevel=info
+
+[Windows OS]
+celery -A core worker -l info --pool=solo
+
+# 3 Run celery-beat
+###############################
+django-celery-beat
+===============================
+
+celery -A core beat -l INFO  # For deeper logs use DEBUG
+celery -A core worker -B -l INFO
+
+You can also embed beat inside the worker by enabling the workers -B option
+
+
+Database scheduler
+celery -A core beat -l INFO --scheduler django_celery_beat.schedulers:DatabaseScheduler
+###############################
