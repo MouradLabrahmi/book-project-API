@@ -1,5 +1,7 @@
 # book-project-API 
  
+A modern web API using Django, GraphQL, Celery/Celery-Beat and Redis. 
+ 
 ## Steps : 
  
 ### 1 Install requirements 
